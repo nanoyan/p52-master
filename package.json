@@ -5,7 +5,8 @@
   "license": "CC0-1.0",
   "description": "Metadatenprofile Französisch Sek I",
   "scripts": {
-    "validate": "validate-md-profile"
+    "validate": "validate-md-profile",
+    "rename": "@powershell copy ./docs/README.md ./index.qmd"
   },
   "repository": {
     "type": "git",
