@@ -31,15 +31,9 @@ jobs:
           path: docs
           retention-days: 1
           overwrite: true
-      - name: Push to Github
-        run: |
-          git config --global user.email "yanpingchenlin@gmail.com"
-          git config --global user.name "nanoyan"
-          mv docs/README.md index.qmd
-          git add .
-          git commit -m 'Prepare docs'
-          git push origin master
-     
+      - name: Rename
+        run: mv docs/README.md index.qmd
+
       - name : Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
