@@ -6,7 +6,7 @@
   "description": "Metadatenprofile Französisch Sek I",
   "scripts": {
     "validate": "validate-md-profile",
-    "rename": "@powershell copy ./docs/README.md ./index.qmd"
+    "rename windows": "@powershell copy ./docs/README.md ./index.qmd"
   },
   "repository": {
     "type": "git",
